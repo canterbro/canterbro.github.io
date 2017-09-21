@@ -1,0 +1,145 @@
+
+.navbar {
+  position: fixed;
+ 
+  overflow:auto;
+  /*margin-left:74px; */
+  /* the z index pushes things forward and backwards in space*/
+  z-index: 999;
+}
+
+.head {
+  width: 55%;
+  margin-top:80px; /* this avoids content overlay */
+  float:left;
+}
+
+.profilepic {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg); 
+  width: 42%;
+  margin-top: 80px; /* this avoids content overlay */
+  float: left;
+}
+
+.clearfix{
+  clear:both
+}
+
+.name {
+  font-size: 35px;
+}
+
+#tab {
+  font-size: 20px;
+}
+
+/* moves the contact bullets to the left and the languages to the right */
+.w3-third{
+    float: left;
+    margin: 1.858736059%; 
+    text-align: center;
+    width: 29.615861214%;
+}
+.w3-course{
+  float: left;
+  margin: 1.858736059%; 
+  text-align: left;
+  width: 29.615861214%;
+  font-size: 15px;
+}
+
+.contact{
+  width:55%;
+  margin-right:2%;
+  float: left;
+}
+.language {
+  width:42%;
+  float: left;
+}
+.clearfix{
+  clear:both
+}
+
+
+/* EandE tab features */
+.block {
+  display: center; 
+  width: 700px;
+  height: 250px;
+  margin: auto;
+  padding: 10px;
+  background-color: grey;
+}
+
+.info {
+  display: inline-block;
+  margin-right:55%;
+  width: 30%;
+  /*margin: 1.858736059%; */
+  margin: 2%;
+  text-align: left;
+ /* width: 29.615861214%; */
+}
+
+.heels {
+  font: times;
+  color: #99BADD;
+}
+
+hr {
+  border-color: grey;
+}
+
+.block {
+  position: relative;
+  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  padding: 10px;
+  background: white;
+}
+.block::after {
+  content: '';
+  position: absolute;
+  z-index: -1; /* hide shadow behind image */
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);                
+  width: 70%; 
+  left: 15%; /* one half of the remaining 30% */
+  height: 100px;
+  bottom: 0;
+}
+/* When the screen is less than 600 pixels wide, 
+hide all links, except for the first one ("Home"). 
+Show the link that contains should open and close the topnav (.icon) 
+@media screen and (max-width: 600px) {
+    .w3-top a:not(:first-child) {display: none;}
+    .w3-top a.icon {
+      float: right;
+      display: block;
+    }
+  }
+The "responsive" class is added to the topnav with 
+  JavaScript when the user clicks on the icon. 
+  This class makes the topnav look good on small screens 
+  (display the links vertically instead of horizontally) 
+  
+  @media screen and (max-width: 600px) {
+    .w3-top.responsive {position: relative;}
+    .w3-top.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .w3-top.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+*/
+
